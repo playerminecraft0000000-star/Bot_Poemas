@@ -60,7 +60,8 @@ def gerar_poemas_na_inicializacao():
         poemas = [b.strip() for b in blocos if b.strip()]
         if len(poemas) != 30:
             raise ValueError(f"Quantidade incorreta de poemas: {len(poemas)} encontrados, 30 esperados.")
-        print("Poemas gerados com sucesso.")
+        else:
+            print("Poemas gerados com sucesso.")
     except Exception as e:
         print(f"Erro crítico na Geração de Poemas: {e}")
 
